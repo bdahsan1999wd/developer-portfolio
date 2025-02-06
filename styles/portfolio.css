@@ -8,13 +8,17 @@
 .text-primary {
   color: #fd6e0a;
 }
+
 .text-secondary {
   color: #474747;
 }
+
 .text-tertiary {
   color: rgb(71, 71, 71);
 }
+
 /* .text-quaternary {} */
+
 /* .text-quinary {} */
 
 /* ----------Shared Button Styles---------- */
@@ -69,7 +73,7 @@
   text-align: center;
 }
 
-/* ------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------ */
 
 /* ----------Heading/Banner Background image/color Styles---------- */
 header {
@@ -293,25 +297,39 @@ section {
   margin-top: 50px;
 }
 
-/* Contact Styles */
+/* ----------Contact Section Styles---------- */
 
 .contact {
+  /* border: 10px solid black; */
   display: flex;
   gap: 100px;
-  background: #fff8f3;
   padding: 130px 200px;
 }
-.contact .section-title {
-  text-align: left;
+
+/* ----------left side column---------- */
+.left-column {
+  border: 5px solid rgb(13, 222, 226);
+  width: 55%;
 }
+
+.contact a {
+  text-decoration: none;
+}
+
+/* ----------right side column---------- */
+.right-column {
+  border: 5px solid rgb(13, 226, 31);
+  width: 45%;
+}
+
 .contact input[type="text"],
 input[type="email"],
 textarea {
   margin-bottom: 24px;
-  border: 0;
+  border: none;
+  border-radius: 5px;
+  height: 64px;
   width: 100%;
-  padding: 18px 30px;
-}
-.contact a {
-  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
 }
