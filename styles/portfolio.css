@@ -59,6 +59,13 @@
   background-color: rgb(255, 248, 243);
 }
 
+/* ----------Shared text center---------- */
+.text-center {
+  text-align: center;
+}
+
+/* ------------------------------------------------------------------------------------ */
+
 /* ----------Heading/Banner Background image/color Styles---------- */
 header {
   border: 10px solid red;
@@ -167,11 +174,10 @@ section {
 }
 .section-title {
   border: 3px solid blue;
-  /* margin-bottom: 50px; */
 }
+
 .section-description {
   border: 3px solid rgb(9, 209, 9);
-  /* margin-bottom: 30px; */
 }
 
 /* ----------about information container styles---------- */
@@ -192,26 +198,36 @@ section {
   color: #474747;
 }
 
-/* My Skills Styles */
+/* ----------My Skills Section Styles added---------- */
+.my-skills {
+  border: 10px solid salmon;
+}
 
 .skills-container {
+  border: 5px solid rgb(72, 10, 243);
   display: flex;
   gap: 24px;
+  margin-top: 50px;
 }
 .skill {
+  border: 5px solid rgb(28, 247, 20);
   background: #ffffff;
-  box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
+  box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
   border-radius: 5px;
   padding: 30px;
 }
 .skill-title {
+  border: 2px solid rgb(243, 31, 8);
   font-weight: 700;
-  font-size: 24px;
+  font-size: 22px;
   margin-top: 30px;
   margin-bottom: 20;
 }
 .skill-description {
+  border: 2px solid rgb(3, 61, 27);
   color: #757575;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 /* Resume Styles */
