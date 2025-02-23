@@ -292,3 +292,50 @@ textarea {
   color: #333333;
   font-size: 20px;
 }
+
+/* ----------Responsive Media Query---------- */
+
+/* ----------Small Device Responsive Added---------- */
+
+@media screen and (max-width: 576px) {
+  .skills-container,
+  .resume-container {
+    flex-direction: column;
+  }
+
+  .contact {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+  .about {
+    padding: 20px;
+  }
+  .about-info-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner {
+    flex-direction: column;
+    margin: 20px;
+  }
+  .banner button {
+    margin: 10px;
+  }
+
+  header {
+    background-image: none;
+  }
+  .banner-profile {
+    width: 100%;
+  }
+}
