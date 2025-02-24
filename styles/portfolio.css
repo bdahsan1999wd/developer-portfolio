@@ -109,6 +109,7 @@ nav a {
   text-decoration: none;
   font-size: 20px;
   font-weight: 400;
+  white-space: nowrap;
 }
 
 /* ---------Banner styles----------*/
@@ -293,49 +294,135 @@ textarea {
   font-size: 20px;
 }
 
-/* ----------Responsive Media Query---------- */
+/* ----------Responsive Media Query Styles Added---------- */
 
-/* ----------Small Device Responsive Added---------- */
+/* ----------Small Device Responsive Updated---------- */
 
 @media screen and (max-width: 576px) {
   .skills-container,
-  .resume-container {
-    flex-direction: column;
-  }
-
-  .contact {
-    flex-direction: column;
-    padding: 20px;
-  }
-  .left-column,
-  .right-column {
-    width: 100%;
-  }
-  .about {
-    padding: 20px;
-  }
+  .resume-container,
   .about-info-container {
     flex-direction: column;
     align-items: center;
+    text-align: center;
+  }
+
+  .contact,
+  .about {
+    padding: 20px;
   }
 
   nav {
     flex-direction: column;
     align-items: center;
+    padding: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  nav li {
+    margin-left: 0;
+  }
+
+  /* ----------Adjust banner---------- */
+  .banner {
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+    align-items: center;
+  }
+
+  .banner-title {
+    font-size: 50px;
+  }
+
+  .banner-profile {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+  }
+
+  /* ----------Adjust contact form inputs---------- */
+  .contact input[type="text"],
+  .contact input[type="email"],
+  .contact textarea {
+    width: 100%;
+    font-size: 14px;
+    height: 50px;
+  }
+
+  /* ----------Footer improvements---------- */
+  #footer {
+    font-size: 16px;
+    padding: 15px;
+  }
+}
+
+/* ----------Tablet/Medium Device Responsive Updated---------- */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .banner {
     flex-direction: column;
+    align-items: center;
+    text-align: center;
     margin: 20px;
   }
-  .banner button {
-    margin: 10px;
+
+  .banner-content {
+    max-width: 100%;
+    padding: 0 20px;
   }
 
-  header {
-    background-image: none;
+  .banner-title {
+    font-size: 65px;
   }
+
+  .banner-sub-title {
+    font-size: 35px;
+  }
+
   .banner-profile {
+    width: 80%;
+    max-width: 450px;
+  }
+
+  .about {
+    padding: 50px;
+  }
+
+  .about-info-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact {
+    flex-direction: column;
+    padding: 50px;
+    gap: 50px;
+    text-align: center;
+  }
+
+  .left-column,
+  .right-column {
     width: 100%;
   }
 }
